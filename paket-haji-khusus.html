@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Haji Khusus - Syakirasya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header></header>
+
+  <section class="section">
+    <h2>Haji Khusus ONH Plus</h2>
+    <img src="img/umrah3.jpg" alt="Haji Khusus" style="width:300px; border-radius:12px;" />
+    <p><strong>Kuota Terbatas</strong></p>
+    <p>Paket ini termasuk:</p>
+    <ul style="text-align:left; max-width:600px; margin:auto;">
+      <li>✅ Izin resmi PIHK (Kemenag RI)</li>
+      <li>🕋 Akomodasi dekat Masjidil Haram</li>
+      <li>📜 Manasik & bimbingan intensif</li>
+      <li>🚌 Maktab Mina-Arafah full fasilitas</li>
+      <li>💼 Konsultan perjalanan khusus keluarga</li>
+    </ul>
+    <br>
+    <a href="index.html#booking" class="btn-daftar" onclick="setPaketFromDetail('Haji Khusus ONH Plus')">Booking Sekarang</a>
+  </section>
+
+  <script>
+    function setPaketFromDetail(nama) {
+      localStorage.setItem('paketDipilih', nama);
+    }
+  </script>
+</body>
+</html>

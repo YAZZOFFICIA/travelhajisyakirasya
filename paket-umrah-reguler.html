@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Umrah Reguler 9 Hari - Syakirasya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header></header>
+
+  <section class="section">
+    <h2>Umrah Reguler 9 Hari</h2>
+    <img src="img/umrah1.jpg" alt="Umrah Reguler" style="width:300px; border-radius:12px;" />
+    <p>Harga: <strong>Rp 28.000.000</strong></p>
+    <p>Paket ini termasuk:</p>
+    <ul style="text-align:left; max-width:600px; margin:auto;">
+      <li>✈️ Tiket Pesawat PP</li>
+      <li>🏨 Hotel Bintang 4 (dekat Masjidil Haram)</li>
+      <li>🍽️ Makan 3x sehari</li>
+      <li>🚌 Transportasi AC selama di Arab</li>
+      <li>🕋 Manasik & bimbingan ibadah</li>
+    </ul>
+    <br>
+    <a href="index.html#booking" class="btn-daftar" onclick="setPaketFromDetail('Umrah Reguler 9 Hari')">Booking Sekarang</a>
+  </section>
+
+  <script>
+    function setPaketFromDetail(nama) {
+      localStorage.setItem('paketDipilih', nama);
+    }
+  </script>
+</body>
+</html>
