@@ -147,7 +147,7 @@ ul li {
 }
 
 /* Gallery */
-.gallery {
+.galeri {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -155,7 +155,7 @@ ul li {
   margin-top: 20px;
 }
 
-.gallery img {
+.galeri img {
   width: 280px;
   height: auto;
   border-radius: 10px;
@@ -585,3 +585,52 @@ footer .social-media img:hover {
 .cta-button:hover {
   background: #1ebe5b;
 } 
+.paket-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+.paket-card {
+  flex: 0 0 auto;
+  width: 250px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  scroll-snap-align: start;
+}
+.paket-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.btn-detail {
+  display: inline-block;
+  margin-top: 10px;
+  background: #25d366;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.galeri-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin; /* Firefox */
+}
+.galeri-scroll-container img {
+  flex: 0 0 auto;
+  width: 250px;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.galeri-scroll-container img:hover {
+  transform: scale(1.05);
+}
